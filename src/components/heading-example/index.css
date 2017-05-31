@@ -1,0 +1,34 @@
+/** @define Heading */
+
+:root {
+    --Heading-font: inherit;
+    --Heading-color: #555;
+}
+
+.Heading {
+    color: var(--Heading-color);
+    font: var(--Heading-font);
+}
+
+.Heading--sizeXL {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.Heading--sizeL {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.Heading--sizeM {
+    font-size: 15px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.Heading--sizeS {
+    font-size: 13px;
+    margin-bottom: 5px;
+}

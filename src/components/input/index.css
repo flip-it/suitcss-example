@@ -1,0 +1,41 @@
+/** @define Input */
+
+:root {
+    --Input-font: normal 14px/1.6 Arial;
+    --Input-color: #333;
+    --Input-border-color: #ccc;
+    --Input-border-color-focus: #33f;
+    --Input-placeholder-color: #999;
+}
+
+/**
+ * 1. Full width as default
+ */
+
+.Input {
+    border: 1px solid var(--Input-border-color);
+    display: block; /* 1 */
+    font: var(--Input-font);
+    font-size: 16px;
+    height: 40px;
+    outline: 0;
+    padding: 0 10px;
+    width: 100%; /* 1 */
+}
+
+.Input:focus {
+    border-color: var(--Input-border-color-focus);
+}
+
+.Input--multiline {
+    min-height: 135px;
+    padding: 10px;
+}
+
+.Input::placeholder {
+    color: var(--Input-placeholder-color);
+}
+
+.Input:focus::placeholder {
+    color: color(var(--Input-placeholder-color) alpha(50%));
+}

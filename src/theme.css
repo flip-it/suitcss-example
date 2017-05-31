@@ -1,0 +1,51 @@
+/**
+ * Theme definition
+ *
+ * This defines the theme in fundamental terms, but not how it is applied to
+ * the components. That is done in `theme-map.css`.
+ */
+
+/**
+ * Breakpoints
+ */
+
+@custom-media --sm-viewport max-width:750px;
+@custom-media --md-viewport (min-width:750px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
+
+/**
+ * Colors
+ */
+
+:root {
+    --color-gray: #575757;
+    --color-gray-light: #ccc;
+    --color-white: #fff;
+    --color-blue: #33f;
+}
+
+/**
+ * Fonts
+ */
+
+:root {
+    --font-size: 14px;
+    --font-family: Helvetica, Arial, sans-serif;
+    --line-height: 1.6;
+    --font-weight-light: 300;
+    --font-weight-book: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Shortcuts to set entire font definition (weight, italics, size,
+     * line-height and font-family). It would be preferable to omit size and
+     * line-height, but that's not valid in CSS.
+     */
+    --font-light: var(--font-weight-light) var(--font-size) / var(--line-height) var(--font-family);
+    --font-book: var(--font-weight-book) var(--font-size) / var(--line-height) var(--font-family);
+    --font-medium: var(--font-weight-medium) var(--font-size) / var(--line-height) var(--font-family);
+    --font-bold: var(--font-weight-bold) var(--font-size) / var(--line-height) var(--font-family);
+
+    --font-light-italic: var(--font-weight-light) italic var(--font-size) / var(--line-height) var(--font-family);
+    --font-book-italic: var(--font-weight-book) italic var(--font-size) / var(--line-height) var(--font-family);
+}

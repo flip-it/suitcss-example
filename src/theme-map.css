@@ -1,0 +1,27 @@
+@import "./theme.css";
+
+/**
+ * Button
+ */
+
+:root {
+    --Button-font: var(--font-book);
+    --Button-color: var(--color-gray);
+    --Button-bg-color: var(--color-white);
+    --Button-border-color: currentcolor;
+    --Button-border-width: 1px;
+    --Button-disabled-opacity: 0.6;
+    --Button-padding: 0.4em 0.75em;
+}
+
+/**
+ * Input
+ */
+
+:root {
+    --Input-font: var(--font-medium);
+    --Input-color: var(--color-gray);
+    --Input-border-color: var(--color-gray-light);
+    --Input-border-color-focus: var(--color-blue);
+    --Input-placeholder-color: var(--color-gray-light);
+}

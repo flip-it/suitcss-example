@@ -1,0 +1,9 @@
+{
+  // babel parser to support ES features
+  "parser": "babel-eslint",
+  // based on https://github.com/feross/standard
+  "extends": [ "standard"],
+  "env": {
+    "browser": true
+  }
+}
